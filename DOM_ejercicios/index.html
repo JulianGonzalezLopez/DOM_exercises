@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-dark>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header id="header-navbar"><h1>Ejercicios de DOM</h1></header>
+            <i id="i-img"><img id="hambur-img"src="hambur.jpg" alt="Hamburguesa"></i>
+        </nav>
+
+        <aside id="hamburger-menu">
+            <ul>
+                <li><a href="#seccion1">Reloj digital y alarma sonora</a></li>
+                <li><a href="#seccion2">Eventos de teclado</a></li>
+                <li><a href="#seccion3">Countdown</a></li>
+                <li><a href="#seccion4">Responsive media</a></li>
+                <li><a href="#seccion5">Responsive tester</a></li>
+                <li><a href="#seccion6">Deteccion de webcam</a></li>
+                <li><a href="#seccion7">Geolocalización</a></li>
+                <li><a href="#seccion8">Filtro de busqueda</a></li>
+                <li><a href="#seccion9">Sorteo digital</a></li>
+                <li><a href="#seccion10">Carrousel responsive</a></li>
+                <li><a href="#seccion11">Video observer</a></li>
+                <li><a href="#seccion12">Validar formularios</a></li>
+            </ul>
+        </aside>
+
+        <main id="main">
+            <section id="seccion1" class="secciones">
+                <header><h2>Reloj digital y alarma sonora</h2></header>
+                <p id="reloj"></p>
+                <button id="iniciarReloj">Iniciar reloj</button>
+                <button id="detenerReloj">Detener reloj</button>
+                <button id="iniciarAlarma">Iniciar alarma</button>
+                <button id="detenerAlarma">Detener alarma</button>
+            </section>
+            <section id="seccion2" class="secciones">
+                <header><h2>Eventos de teclado</h2></header>
+                <div id="playground">
+                    <div id="playground-img-holder"><img id="playground-img" src="ivern.jpg" alt="" srcset=""></div>
+                </div>
+            </section>
+            <section id="seccion3" class="secciones">
+                <header><h2>Countdown</h2></header>
+                <input type="datetime-local" name="" id="countdown-input">
+                <button id="countdown-btn">Comenzar cuenta atras</button>
+                <p id="countdown"></p>
+            </section>
+            <section id="seccion4" class="secciones">
+                <header><h2>Responsive media</h2></header>
+                <div id="youtube"></div>
+                <div id="twitter"></div>
+            </section>
+            <section id="seccion5" class="secciones">
+                <header><h2>Responsive tester</h2></header>
+                <form id="form"> 
+                    <input type="text" name="tester" id="url-input" placeholder="URL">
+                    <input type="number" name="tester" id="alto-input" placeholder="Alto">
+                    <input type="number" name="tester" id="ancho-input" placeholder="Ancho">
+                    <input type="submit" value="Probar" id="submit-btn">
+                    <input type="button" value="Cerrar" id="cerrar-btn">
+                </form>
+            </section>
+            <section id="seccion6" class="secciones">
+                <header><h2>Deteccion de webcam</h2></header>
+                <video src="" id="videoWebCam"></video>
+                <div id="botonera">
+                    <button id="iniciarwc">Iniciar video</button>
+                    <button id="finalizarwc">Finalizar video</button>
+                </div>
+            </section>
+            <section id="seccion7" class="secciones">
+                <header><h2>Geolocalización</h2></header>
+                <p id="pLat">Latitud: </p>
+                <p id="pLon">Longitud: </p>
+                <p id="pPre">Precisión: </p>
+                <button id="btn-geo">Iniciar busqueda</button>
+                <p>Ver en <a href="#" id="mapsDireccion" target="_blank">maps</a></p>
+            </section>
+            <section id="seccion8" class="secciones">
+                <header><h2>Filtro de busqueda</h2></header>
+                <input id="searchBar" type="text" placeholder="Ingrese un nombre">
+                <div id="cards-container">
+                    <div class="card" id="card">
+                        <img src="goku.jpg" alt="" class="card-img">
+                        <caption class="card-caption"><h3 class="nombre">Goku</h3></caption></div>
+                    <div class="card" id="card">
+                        <img src="vegeta.jpg" alt="" class="card-img">
+                        <caption class="card-caption"><h3 class="nombre">Vegeta</h3></caption></div>
+                    <div class="card" id="card">
+                        <img src="krilin.jfif" alt="" class="card-img">
+                        <caption class="card-caption"><h3 class="nombre">Krilin</h3></caption></div>
+                    <div class="card" id="card">
+                        <img src="gohan.jpeg" alt="" class="card-img">
+                        <caption class="card-caption"><h3 class="nombre">Gohan</h3></caption></div>
+                    <div class="card" id="card">
+                        <img src="trunks.jpeg" alt="" class="card-img">
+                        <caption class="card-caption"><h3 class="nombre">Trunks</h3></caption></div>
+                </div>
+            </section>
+            <section id="seccion9" class="secciones">
+                <header><h2>Sorteo digital</h2></header>
+                    <input type="text" name="texto" id="nombreNuevo" placeholder="Ingrese un participante">
+                    <ul id="participantes">
+                    </ul>
+                    <div id="div-btns">
+                        <button id="agregar">Agregar participante</button>
+                        <button id="iniciar">Iniciar sorteo</button>
+                    </div>
+            </section>
+            <section id="seccion10" class="secciones">
+                <header><h2>Carrousel responsive</h2></header>
+                <div id="carrousel-father">
+                    <div class="carrousel active">
+                        <img class="c-img" src="https://placeimg.com/440/480/any">
+                    </div>
+                    <div class="carrousel">
+                        <img class="c-img" src="https://placeimg.com/440/480/any">
+                    </div>
+                    <div class="carrousel">
+                        <img class="c-img" src="https://placeimg.com/400/400/any">
+                    </div>
+                    <div class="carrousel">
+                        <img class="c-img" src="https://placeimg.com/640/680/any">
+                    </div>
+                    <div id="arrows">
+                        <button><p id="left-btn">←</p></button>
+                        <button><p id="right-btn">→</p></button>
+                    </div>
+                </div>
+            </section>
+            <section id="seccion11" class="secciones">
+                <header><h2>Video observer</h2></header>
+                <div id="div-video">
+                    <video id="videoOb"src="ven.mp4" controls></video>
+                </div>
+            </section>
+            <section id="seccion12" class="secciones">
+                <header><h2>Validar formularios</h2></header>
+                <form action="https://formsubmit.co/ab72b771ef040cfbf0ea972f4c6b23ee" id="form-val" target="_blank" method="POST"> 
+                    <legend>Envianos tus comentarios</legend>
+                    <input type="text" name="nombre" id="" placeholder="ej: Gaspar Gomez" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Ingresa tu nombre usando solo letras y espacios"> 
+                    <input type="email" name="email" id="" placeholder="ej: larilu@termo74.com" required pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Ingresa un email valido">
+                    <input type="text" name="asunto" id="" placeholder="ej: Mis pensamientos sobre el color de la pagina" required title="El asunto es requerido">
+                    <textarea name="comentario" id="" cols="50" rows="10" placeholder="Escribe tu comentario" required data-pattern="^.{1,255}$" title="El comentario es requerido"></textarea>
+                    <input type="submit" id="submit-val" value="Enviar">
+                </form>
+            </section>
+            <div id="up-div">
+                <img id="up-img" src="img-arriba.png" alt="asd">
+            </div>
+
+            <div id="dark-div">
+                <p id="dark-btn">🌙</p>
+            </div>
+            <script src="app.js"></script>
+        </main>
+    </body>
+</html>
